@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}Smartfonların Arxasındakı Gizli Elm : Sensorlar Ordusu{% endblock %}
+{% block header %}Smartfonların Arxasındakı Gizli Elm : Sensorlar Ordusu{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='ortaq.css') }}">{% endblock %}
+{% block content %}
+<center>
+    <img src="{{ url_for('static', filename='sensorlar_ordusu.png') }}">
+</center>
+<h3>
+    <b>1. Əsas Sensorlar və Onların İş Prinsipləri</b><br><br>
+    Smartfonun gövdəsində gizlənən və cihazın "beş duyğu üzvü" rolunu oynayan əsas sensorlar aşağıdakılardır: <br><br>
+    A. Akselerometr (Sürətlənmə Ölçən)
+    <ul>
+        <li>
+            Nədir və necə işləyir? Cihazın xətti hərəkət sürətini və onun üç ox (X, Y, Z) üzrə meylini ölçür. MEMS strukturlu bu sensorun daxilində mikroskopik bir kütlə yaylar 
+            üzərində asılı vəziyyətdə durur. Telefon hərəkət etdikdə bu kütlə yerini dəyişir, elektrik tutumu dəyişir və çip bunu hərəkət kimi qeydə alır.
+        </li><br>
+                
+        <li>
+            Funksiyası: Ekranın avtomatik fırlanması (portret/landşaft rejimi), addımölçən (pedometr) tətbiqləri və qəza zamanı (məsələn, maşın qəzası yoxlanışı) hava 
+            yastıqlarının aktivləşməsi siqnalı.
+        </li><br>
+    </ul>
+    <b>B. Giroskop (Yönbələdçi)</b>
+    <ul>
+        <li>
+            Nədir və necə işləyir? Akselerometr yalnız düz xətt üzrə hərəkəti ölçdüyü halda, giroskop cihazın öz oxu ətrafındakı fırlanma bucağını və bucaq sürətini təyin 
+            edir. Kosmik gəmilərdə və təyyarələrdə istifadə olunan giroskopların mikroskopik versiyasıdır.
+        </li> <br>
+
+        <li>
+            Funksiyası: Mobil oyunlarda (məsələn, sükan idarəetməsi və ya yarış oyunları), 360 dərəcəlik foto/video çəkilişlərində, VR (Virtual Reallıq) və AR (Artırılmış 
+            Reallıq) tətbiqlərində dəqiqliyi təmin edir.
+        </li><br>
+    </ul>
+    <b>C. Yaxınlıq Sensoru (Proximity Sensor)</b>
+
+    <ul>
+        <li>
+            Nədir və necə işləyir? Adətən telefonun ön dinamikinin yanında (ekranın üst hissəsində) yerləşir. Görünməz infraqırmızı (IR) işıq şüası yayır. Əgər bu şüa hər 
+            hansı bir obyektə (məsələn, insanın üzünə) dəyib geri qayıdırsa, sensor yaxınlıqda bir obyekt olduğunu anlayır.
+        </li><br>
+                
+        <li>
+            Funksiyası: Zəng zamanı telefonu qulağınıza yaxınlaşdırdığınızda ekranı avtomatik söndürür. Bu, həm batareyaya qənaət edir, həm də üzünüzün ekrana toxunaraq 
+            təsadüfi düymələrə basmasının qarşısını alır.
+        </li><br>
+    </ul>
+
+    <b>D. Ətraf Mühit İşıq Sensoru (Ambient Light Sensor)</b>
+    <ul>
+        <li>
+            Nədir və necə işləyir? Ətrafdakı işığın intensivliyini (lüks vahidi ilə) ölçən fotodioddur.
+        </li><br>
+
+        <li>
+            Funksiyası: Ekranın parlaqlığının avtomatik tənzimlənməsi (Auto-Brightness). Günəşli havada ekranı maksimum parlaqlığa gətirir, qaranlıq otaqda isə gözü 
+            yormasın deyə parlaqlığı minimuma endirir.
+        </li><br>
+    </ul>
+
+    <b>E. Maqnitometr (Rəqəmsal Kompas)</b>
+    <ul>
+        <li>
+            Nədir və necə işləyir? Yer kürəsinin maqnit sahəsini ölçür. Hol effekti (Hall Effect) prinsipinə əsaslanaraq, maqnit sahəsinin təsiri ilə keçiricidən keçən 
+            cərəyanın yaratdığı gərginlik fərqini hesablayır.
+        </li><br>
+
+        <li>
+                Funksiyası: Xəritə tətbiqlərində (Google Maps, Apple Maps) sizin hansı istiqamətə (Şimal, Cənub, Şərq, Qərb) baxdığınızı dəqiqliklə göstərir.
+        </li><br>
+    </ul>
+        
+    <b>F. Barometr (Atmosfer Təzyiqi Ölçən)</b>
+    <ul>
+        <li>
+            Nədir və necə işləyir? Cihazın yerləşdiyi mühitdəki atmosfer təzyiqini ölçür.
+        </li><br>
+        <li>
+            Funksiyası: Təzyiq dəyişikliyinə əsasən dəniz səviyyəsindən olan hündürlüyü (altituda) hesablayır. GPS-in şaquli oxda (məsələn, binanın neçənci mərtəbəsində 
+            olduğunuzu tapmaqda) dəqiqliyini artırır və qısa müddətli hava proqnozunu təyin etməyə kömək edir.
+        </li><br>
+    </ul>
+</h3>
+{% endblock %}  

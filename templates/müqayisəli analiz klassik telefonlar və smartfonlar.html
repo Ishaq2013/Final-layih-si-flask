@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Müqayisəli Analiz: Klassik Telefonlar və Smartfonlar{% endblock %}
+{% block header %}Müqayisəli Analiz: Klassik Telefonlar və Smartfonlar{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='ortaq.css') }}">{% endblock %}
+{% block content %}
+<center>
+    <img src="{{ url_for('static', filename='müqayisəli analiz klassik telefonlar və smartfonlar.png') }}">
+</center>
+<h3>
+    <b>1. Struktur və Texniki Göstəricilərin Müqayisəsi</b> <br><br>
+    Klassik telefonlar və smartfonların texniki memarlığı bir-birindən köklü şəkildə fərqlənir: <br> <br>
+    Proqram Təminatı və Əməliyyat Sistemi : <br>
+    <ul>
+        <li>
+            Klassik Telefonlar: Sahib olduqları proqram təminatı qapalı (firmware) tipli olurdu. İstifadəçi kənardan proqram (tətbiq) yükləyə bilmirdi, yalnız istehsalçının 
+            zavodda yazdığı funksiyalarla (təqvim, zəngli saat, sadə oyunlar) məhdudlaşırdı.
+        </li> <br>
+        <li>
+            Smartfonlar: Müasir smartfonlar inkişaf etmiş Əməliyyat Sistemləri (iOS, Android) ilə çalışır. "App Store" və ya "Google Play" vasitəsilə milyonlarla fərqli 
+            tətbiqi dəstəkləyir və ekosistem tamamilə dinamikdir.
+        </li> <br>
+    </ul>
+    Ekran və İdarəetmə interfeysi : <br>
+    <ul>
+        <li>
+            Klassik Telefonlar: Kiçik, əsasən monoxrom (ağ-qara) və ya aşağı piksel sıxlığına malik rəngli LCD ekranlar istifadə olunurdu. İdarəetmə fiziki düymələr 
+            (alfa-numerik klaviatura) vasitəsilə həyata keçirilirdi.
+        </li> <br>
+        <li>
+            Smartfonlar: Yüksək ayırdetməli (OLED, AMOLED), böyük və çoxnöqtəli toxunuşu dəstəkləyən (Multi-touch) sensor ekranlar standartdır. Fiziki düymələr minimuma 
+            endirilib.
+        </li> <br>
+    </ul>
+    Hesablama Gücü və Yaddaş : <br>
+    <ul>
+        <li>
+            Klassik Telefonlar: Prosessor gücü bir neçə meqahers (MHz) ilə ölçülürdü, operativ yaddaş (RAM) və daxili yaddaş isə meqabaytlar (MB) səviyyəsində idi.
+        </li> <br>
+        <li>
+            Smartfonlar: Çoxnüvəli gigaherz (GHz) sürətli prosessorlar, süni intellekt blokları (NPU), gigabaytlarla (GB) RAM və terabayta (TB) çatan daxili yaddaş sistemləri 
+            mövcuddur.
+        </li> <br>
+    </ul>
+    <b>2. Qarşılıqlı Analiz Cədvəli</b>
+    Aşağıdakı cədvəl hər iki cihaz kateqoriyasının müsbət və mənfi tərəflərini aydın şəkildə ortaya qoyur :
+    <table>
+        <tr>
+            <th>Müqayisə Meyarı</th>
+            <th>Klassik Düyməli Telefonlar</th>
+            <th>Müasir Smartfonlar</th>    
+        </tr> <br>
+        <tr>
+            <td>Enerji Davamlılığı</td>
+            <td>Çox yüksək: Bir doldurma ilə 1-2 həftə işləyə bilir.</td>
+            <td>Aşağı/Orta: Böyük ekran və sensorlar səbəbindən 1-2 gün işləyir.</td>
+        </tr> <br>
+        <tr>
+            <td>Fiziki Davamlılıq</td>
+            <td>Çox yüksək: Yerə düşdükdə korpus asanlıqla qırılmır, təmiri ucuzdur.</td>
+            <td>Həssas: Şüşə korpus və böyük ekranlar zərbəyə qarşı çox həssasdır.</td>
+        </tr> <br>
+        <tr>
+            <td>Funksionallıq</td>
+            <td>Məhdud: Yalnız zəng, SMS və bəzi əsas alətlər.</td>
+            <td>Sonsuz: Naviqasiya, bankçılıq, ofis proqramları, oyunlar və s.</td>
+        </tr> <br>
+        <tr>
+            <td>İnternet və Bağlılıq</td>
+            <td>Yoxdur və ya çox zəif, məhdud (WAP/GPRS).</td>
+            <td>Yüksək sürətli: Wi-Fi, 4G, 5G, bulud texnologiyaları.</td>
+        </tr> 
+        <tr>
+            <td>Kamera və Multimedia</td>
+            <td>Kamera ya yoxdur, ya da çox aşağı keyfiyyətlidir (VGA).</td>
+            <td>Peşəkar səviyyədə: Çoxlu linzalar, 4K/8K video çəkiliş imkanı.</td>
+        </tr> 
+        <tr>
+            <td>Kiber-təhlükəsizlik</td>
+            <td>Təhlükəsiz: İnternetə çıxışı olmadığı üçün virus və xaker riski yoxdur.</td>
+            <td>Həssas: Şəxsi məlumatların oğurlanması, fişinq və kiber-hücum riski var.</td>
+        </tr>
+    </table> <br>
+    <b>3. Ekoloji və Sosial-İqtisadi Təsirlər</b><br><br>
+    Bu təkamül təkcə texnoloji deyil, həm də qlobal ekoloji və sosioloji dəyişikliklərə yol açdı:<br>
+    <ul>
+        <li>
+            Ekoloji Ayaq İzi (Karbon Emissiyası): Klassik telefonların istehsalında istifadə olunan materiallar daha sadə idi. Smartfonlar isə nadir torpaq elementləri, 
+            litium, kobalt kimi ağır metalların çıxarılmasını tələb edir ki, bu da "qanlı minerallar" problemini və yüksək karbon emissiyasını ortaya çıxarır. Həmçinin, 
+            sürətli istehsal qlobal elektron tullantıların (E-waste) miqdarını həndəsi silsilə ilə artırır.
+        </li><br>
+        <li>
+            Sosial Asılılıq və Həyat Tərzi: Klassik telefonlar insanı real dünyadan qoparmırdı; o, sadəcə ehtiyac anında istifadə olunan bir alət idi. Smartfonlar isə daimi 
+            bildirişlər, sosial şəbəkələr və alqoritmlər vasitəsilə "rəqəmsal asılılıq" yaradır. Bununla belə, uzaqdan iş, məsafədən təhsil və qlobal inteqrasiya məhz 
+            smartfonların sayəsində mümkün olmuşdur.
+        </li>
+    </ul>
+</h3>
+{% endblock %}

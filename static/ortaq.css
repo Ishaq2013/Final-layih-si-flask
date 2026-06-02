@@ -1,0 +1,66 @@
+/* css-ləri ortaq olan fayllar üçün yaratmışam */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-image:url("../static/image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h3 {
+    text-align: center;
+    color: #333;
+    margin: 70px 30px;
+    font-family: sans-serif;
+}
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-top: 25px;
+    transform: translate(0px, -40px); /* padding və ya margin istifadöə etmıdəm elementlərihn yerini dəyişmək üçündür */
+    transition: all 0.3s ease-in-out; /* hover effektinin daha yumşaq görünməsi üçün keçid əlavə etdim */
+}
+
+a.button:hover {
+    background-color: #555;
+    transform: translate(0px, -40px) scale(1.1); /* hover effektində düymənin biraz böyüməsi və rənginin dəyişməsi üçün scale() funksiyasını əlavə etdim */
+}
+li {
+    font-size: 18px;
+    color: #333;
+    margin: 20px 30px;
+    font-family: sans-serif;
+    text-align: left;
+}
+img {
+    width: 800px;
+    height: 350px;
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid black; 
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #333;
+    color: white;
+}

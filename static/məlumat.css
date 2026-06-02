@@ -1,0 +1,34 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    background-image:url("../static/image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1.qüerty {
+    text-align: center;
+    color: #333;
+    margin: 100px 0;
+}
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    transform: translate(0px, -40px); /* padding və ya margin istifadöə etmıdəm elementlərihn yerini dəyişmək üçündür */
+    transition: all 0.3s ease-in-out; /* hover effektinin daha yumşaq görünməsi üçün keçid əlavə etdim */
+}
+
+a.button:hover {
+    background-color: #555;
+    transform: translate(0px, -40px) scale(1.1); /* hover effektində düymənin biraz böyüməsi və rənginin dəyişməsi üçün scale() funksiyasını əlavə etdim */
+}

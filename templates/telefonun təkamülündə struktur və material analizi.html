@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block title %}Telefonun Təkamülündə Struktur və Material Analizi{% endblock %}
+{% block header %}Telefonun Təkamülündə Struktur və Material Analizi{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='ortaq.css') }}">{% endblock %}
+{% block content %}
+<center>
+        <img src="{{ url_for('static', filename='sturuktur və material analizi.png') }}">
+</center>
+<h3> 
+    <b>1. Tarixi Dövrlər üzrə Material Analizi</b> <br><br>
+
+    A. Klassik Stasionar Telefonlar Dövrü (XIX əsrin sonu - XX əsrin ortaları) <br><br>
+
+    İlk telefonlar mexaniki olaraq ağır və stasionar (sabit) istifadə üçün nəzərdə tutulmuşdu. <br><br>
+
+    <ul>
+        <li>
+            Bakelit və Ağac: İlk dövrlərdə cihazların qutuları ağır ağacdan, daxili mexanizmləri isə mis və dəmirdən yığılırdı. 1920-ci illərdən etibarən isə bəşəriyyətin 
+            ilk sintetik plastiki olan Bakelit (Bakelite) geniş istifadə olunmağa başladı. Bakelit istiyə dözümlü, elektrik izolyasiyası yüksək olan, lakin yerə düşdükdə 
+            asanlıqla qırılan (kövrək) bir material idi.
+        </li><br>
+    </ul>
+    B. Mobil Telefonların İlk Nəsli və Düyməli Telefonlar (1980 - 2000-ci illər) <br><br>
+    Mobil telefonların yaranması ilə materialların yüngül və zərbəyə davamlı olması tələbi ortaya çıxdı.
+    <ul>
+        <li>
+            Polikarbonat və ABS Plastik: Bu dövrün simvolu olan düyməli telefonlar (məsələn, əfsanəvi Nokia 3310) tamamilə polikarbonat və polimer qarışıqlarından 
+            hazırlanırdı. Bu material elastik idi, zərbə enerjisini udurdu, ucuz başa gəlirdi və rənglənməsi asan idi.
+        </li><br>
+
+        <li>
+            Silikon və Rezin Düymələr: İdarəetmə interfeysi olan fiziki klaviaturalar üçün aşınmaya davamlı elastik silikon və ya bərk plastik düymələrdən istifadə 
+            olunurdu.
+        </li>
+    </ul>         
+    C. Smartfon Erası (2007 - Hazırkı Dövr) <br><br>
+
+    Böyük sensor ekranların həyatımıza daxil olması materialşünaslıqda inqilab tələb etdi. Plastik korpuslar artıq müasir cihazların həm vizual premium imicinə, həm də 
+    daxili istilik paylanmasına cavab vermirdi. <br><br>
+
+    <b>2. Müasir Smartfonlarda İstifadə Olunan Materiallar və Onların Struktur Rolu</b> <br><br>
+
+    Müasir bir smartfon müxtəlif fiziki xüsusiyyətlərə malik materialların sintezindən ibarətdir: <br><br>
+
+    A. Alüminium və Polad (Daxili və Xarici Gövdə) <br><br>
+
+    Smartfonların struktur bütövlüyünü (əyilməyə və qırılmağa qarşı müqavimətini) təmin etmək üçün daxili şassi metal ərintilərindən hazırlanır. <br>
+    <ul>
+        <li>
+            Aerokosmik Alüminium (6000 və 7000 seriyası): Həm çox yüngüldür, həm də daxili çiplərin yaratdığı istiliyi xaricə ötürmək üçün (termal idarəetmə) mükəmməl 
+            keçiricidir.
+        </li><br>
+
+        <li>
+            Paslanmaz Polad və Titanium: Premium cihazların kənarlarında istifadə olunur. Titan (Titanium Grade 5) poladdan daha yüngül, alüminiumdan isə qat-qat güclüdür, 
+            lakin emalı çox baha başa gəlir.
+        </li><br>
+    </ul>
+    B. Qoruyucu Şüşələr (Ekran və Arxa Panel) <br><br>
+
+    Sensor ekranların cızılmaya və düşməyə qarşı davamlı olması üçün adi şüşə yararsızdır. <br>
+
+    <ul>
+        <li>
+            Alüminosilikat Şüşə (Gorilla Glass / Ceramic Shield): Kimyəvi olaraq gücləndirilmiş bu şüşələr kalium ionlarının natrium ionları ilə əvəz edilməsi (ion 
+            mübadiləsi) yolu ilə molekulyar səviyyədə sıxlaşdırılır. Bu struktur şüşənin mikrosaniyələr ərzində çatlamasının qarşısını alır.
+        </li><br>
+    </ul>
+    C. Keramika (Ceramic) <br><br>
+
+    Bəzi xüsusi smartfonların arxa qapağında istifadə olunur. Zirkon əsaslı keramika materiallar demək olar ki, cızılmır və şüşəyə nisbətən zərbəyə daha dözümlüdür, lakin 
+    cihazın ümumi çəkisini artırır. <br><br>
+
+    <b>3. Struktur Dizaynın Mühəndislik Çətinlikləri</b> <br><br>
+
+    Müasir smartfonların dizaynında mühəndislər iki böyük fiziki problemlə mübarizə aparırlar: <br><br>
+    <ul>
+        <li>
+            Anten siqnallarının keçiriciliyi (Faradey Qəfəsi Problemi): Əgər telefonun xarici korpusu tamamilə metaldan (alüminium və ya polad) hazırlansa, bu, siqnal 
+            dalğalarını bloklayır (Faradey qəfəsi effekti). Bu səbəbdən mühəndislər metal gövdənin üzərində görünən plastik anten xətləri (insulator bands) kəsikləri 
+            qoyurlar. Arxa paneldə şüşə və ya keramikaya keçid həm də simsiz doldurma (wireless charging) dalğalarının keçməsinə şərait yaradır.
+        </li><br>
+
+        <li>
+            Qatlana bilən Ekranlar və Struktur (Foldables): Qatlana bilən smartfonların gəlişi ilə materiallar tamamilə dəyişdi. Bu cihazlarda şüşə yerinə UTG (Ultra Thin 
+            Glass - Ultra Nazik Şüşə) və xüsusi polimer polimid təbəqələr istifadə olunur ki, onlar minlərlə dəfə bükülsələr də struktur bütövlüyünü itirmirlər. Həmçinin, 
+            bu cihazların ortasındakı mexaniki "çoxbəndli oynaq" (hinge) sistemi maye metallardan və mikromühəndislik elementlərindən yığılırdı.
+        </li>
+    </ul>
+    <b>4. Müqayisəli Struktur Cədvəli</b>
+    <table>
+        <tr>
+            <th>Material növü</th>
+            <th>Üstünlükləri</th>
+            <th>Çatışmazlıqları</th>
+            <th>Smartfondakı Yeri</th>
+        </tr><br>
+
+        <tr>
+            <td>Polikarbonat (Plastik)</td>
+            <td>Ucuzdur, siqnalı bloklamır, zərbəni udur.</td>
+            <td>Premium hiss yaratmır, asan cızılır, istiliyi zəif ötürür.</td>
+            <td>Büdcə sinfi cihazların korpusu, daxili komponentlər.</td>
+        </tr><br>
+
+        <tr>
+            <td>Alüminium / Polad</td>
+            <td>Premium görünüş, yüksək struktur gücü, əla istilik ötürmə.</td>
+            <td>Siqnalları bloklayır (anten xətləri tələb edir), simsiz şarjı dəstəkləmir.</td>
+            <td>Daxili şassi, yan çərçivələr.</td>
+        </tr><br>
+
+        <tr>
+            <td>Gücləndirilmiş Şüşə</td>
+            <td>Cızılmaya davamlıdır, simsiz şarja imkan verir, estetikdir.</td>
+            <td>Yerə düşəndə qırılma riski yüksəkdir, barmaq izi saxlayır.</td>
+            <td>Yerə düşəndə qırılma riski yüksəkdir, barmaq izi saxlayır.	Ön ekran və arxa panellər.</td>
+        </tr><br>
+    </table>
+</h3>
+{% endblock %}

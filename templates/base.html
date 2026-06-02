@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    {% block css %}{% endblock %}
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png"> <!-- ⬅ favicon qomaq üçün kod -->
+</head>
+<body>
+    <header>
+        <h1>{% block header %}{% endblock %}</h1>
+    </header>
+        {% block content %}
+
+        {% endblock %}
+    <center>
+        <a href="/" class="button">Ana səhifə</a>
+        <a href="/məlumat" class="button">Geri</a>
+    </center>
+</body>
+</html>

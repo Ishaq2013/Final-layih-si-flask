@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Təklif və İradlar{% endblock %}
+{% block header %}Təklif və İradlar{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='təklif və iradlar.css') }}">{% endblock %}
+{% block content %}
+<center>
+    <img src="{{ url_for('static', filename='təklif və iradlar.png') }}">
+</center>
+<h3>
+        Təklif və iradları bildirmək üçün anketi doldurun. ⬇<br><br>
+        Sizin fikirləriniz bizim üçün çox önəmlidir. Hər bir təklif və irad, xidmətimizi daha da yaxşılaşdırmaq üçün bir fürsətdir. <br> Anketi dolduraraq, telefonlar haqqında məlumatlarımızı daha da zənginləşdirə və istifadəçilərimizin ehtiyaclarına daha yaxşı cavab verə bilərik. <br><br>
+</h3>
+    <center>
+        <form action="/nəticə" method = "POST" noneable = "false">
+            <label>Təklif və ya iradlarınızı yazın:</label><br>
+
+            <textarea name="teklif" rows = "5" cols = "100" placeholder="Təklif və ya iradlarınızı buraya yazın..."
+            required oninvalid="this.setCustomValidity('Zəhmət olmasa, bu sahəni boş qoymayın!')" 
+            oninput="this.setCustomValidity('')"></textarea><br><br><br><br><br>
+            <label>Email:</label><br>
+
+            <input type="email" class="düzələn_email" name="email" placeholder="Email adresinizi yazın..." 
+                required oninvalid="this.setCustomValidity('Zəhmət olmasa, bu sahəni boş qoymayın!')" 
+                oninput="this.setCustomValidity('')"><br><br><br><br><br>
+            
+            <input type="submit" value="Göndər" class="asd">
+        </form>
+        <!-- placeholder="Təklif və ya iradlarınızı buraya yazın..." bu onun üçündürki səhifə açılanda anketin içərisində bu yazı görünəsün -->
+        <!-- required oninvalid="this.setCustomValidity('Zəhmət olmasa, bu sahəni boş qoymayın!')" oninput="this.setCustomValidity('')"  bu isə anket boş qalanda xəbərdarlıq verir -->
+    </center>
+{% endblock %}

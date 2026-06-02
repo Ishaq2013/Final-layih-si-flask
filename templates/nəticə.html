@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Nəticə{% endblock %}
+{% block header %}Nəticə{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='ortaq.css') }}">{% endblock %}
+{% block content %}
+<h3>
+    Mesajınız qeydə alındı!
+    Təklif və iradlarınızı bizimlə paylaşdığınız üçün təşəkkür edirik. Sizin fikirləriniz bizim üçün çox önəmlidir və xidmətimizi daha da yaxşılaşdırmaq üçün bir fürsətdir. <br><br>
+    Əgər əlavə suallarınız varsa, bizimlə əlaqə saxlamaqdan çəkinməyin. <br><br>
+    Yenidən görüşmək ümidi ilə! <br><br>
+    Sizin measjınız : {{ təklif }} <br>
+    Sizin email adresiniz : {{ email }} <br><br>
+</h3>
+{% endblock %}
