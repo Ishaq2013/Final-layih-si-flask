@@ -32,7 +32,7 @@ def netice():
 
 @app.route('/eko-toksikologiya')
 def eko_toksikologiya_və_qanlı_minerallar():
-    return render_template('eko-toksikologiya və qanlı minerallar (kritik araşdırma).html')
+    return render_template('eko-toksikologiya və qanlı minerallar (Kritik Araşdırma).html')
 
 @app.route('/struktur-analiz')
 def telefonun_təkamülündə_struktur_və_material_analizi():
